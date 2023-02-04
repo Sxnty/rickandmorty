@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,4 +51,90 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #261C2C;
+  color: white;
+  padding: 1rem;
+}
+.header .header__left input {
+  background-color: transparent;
+  border: 1px solid #5C527F;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+}
+.header .header__left ul {
+  display: flex;
+  gap: 1rem;
+}
+.header img {
+  filter: invert(100%);
+  width: 4%;
+}
+.header i {
+  font-size: 2rem;
+}
+.header i svg {
+  transition: color 250ms;
+}
+.header i svg:hover {
+  color: #6E85B2;
+  cursor: pointer;
+}
+
+.hero__navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.hero__navigation button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 0;
+  background-color: #6E85B2;
+  color: white;
+  transition: background 150ms;
+}
+.hero__navigation button:hover {
+  background-color: #5C527F;
+  cursor: pointer;
+}
+
+.hero {
+  background-color: #3E2C41;
+}
+.hero .hero__cards {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2rem;
+}
+.hero .hero__cards .hero__card {
+  color: white;
+  background-color: rgba(92, 82, 127, 0.4862745098);
+  border-radius: 0.25rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+.hero .hero__cards .hero__card .card__info {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 1rem;
+}
+.hero .hero__cards .hero__card h2 {
+  font-size: 1.5rem;
+}
+.hero .hero__cards .hero__card img {
+  margin: auto;
+  border-radius: 50%;
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */

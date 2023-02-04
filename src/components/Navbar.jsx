@@ -1,5 +1,5 @@
 import React from "react";
-import { BsInstagram, BsGithub} from "react-icons/bs";
+import { BsInstagram, BsGithub } from "react-icons/bs";
 function Navbar() {
   return (
     <header className="header">
@@ -9,8 +9,13 @@ function Navbar() {
       />
       <div className="header__left">
         <ul className="header__menu">
-        <BsInstagram/>
-        <BsGithub/>
+          <input type="text" placeholder="Name..."/>
+          <i>
+            <BsInstagram />
+          </i>
+          <i>
+            <BsGithub />
+          </i>
         </ul>
       </div>
     </header>

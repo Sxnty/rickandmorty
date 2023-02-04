@@ -17,33 +17,45 @@ function CharactersList() {
   }, [page]);
   const Navigation = (props) => {
     return (
-      <section>
-        <button onClick={() => {
-          if(page <1) {
-            console.log('No se puede volver atras.')
-          } else {
-            props.setPage(props.page - 1)
-          }
-        }}>Before</button>
+      <>
+        <button
+          onClick={() => {
+            if (page < 1) {
+              console.log("No se puede volver atras.");
+            } else {
+              props.setPage(props.page - 1);
+            }
+          }}
+        >
+          Before
+        </button>
         <button onClick={() => props.setPage(props.page + 1)}>Next</button>
-      </section>
+      </>
     );
   };
   return (
-    <div>
-      <Navigation page={page} setPage={setPage} />
-      {characters.map((element) => {
-        return (
-          <Character
-            key={element.id}
-            name={element.name}
-            status={element.status}
-            image={element.image}
-            gender={element.gender}
-          />
-        );
-      })}
-    </div>
+    <main className="hero">
+      <section className="hero__navigation">
+        <Navigation page={page} setPage={setPage} />
+      </section>
+      <section className="hero__cards">
+        {characters.map((element) => {
+          return (
+            <Character
+              key={element.id}
+              name={element.name}
+              status={element.status}
+              image={element.image}
+              origin={element.origin.name}
+            />
+          );
+        })}
+              
+      </section>
+      <section className="hero__navigation">
+        <Navigation page={page} setPage={setPage} />
+      </section>
+    </main>
   );
 }
 
