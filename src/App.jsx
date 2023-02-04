@@ -1,10 +1,10 @@
-
+import CharactersList from "./components/CharactersList"
 function App() {
 
 
   return (
     <div className="App">
-      a
+      <CharactersList/>
     </div>
   )
 }
