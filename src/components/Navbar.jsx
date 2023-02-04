@@ -9,7 +9,6 @@ function Navbar() {
       />
       <div className="header__left">
         <ul className="header__menu">
-          <input type="text" placeholder="Name..."/>
           <i>
             <BsInstagram />
           </i>

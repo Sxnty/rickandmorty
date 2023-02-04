@@ -10,7 +10,6 @@ function CharactersList() {
     const getCharacters = async () => {
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
       setCharacters(data.results);
     };
     getCharacters();
@@ -50,7 +49,6 @@ function CharactersList() {
             />
           );
         })}
-              
       </section>
       <section className="hero__navigation">
         <Navigation page={page} setPage={setPage} />
