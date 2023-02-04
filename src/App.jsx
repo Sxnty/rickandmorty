@@ -1,12 +1,12 @@
-import CharactersList from "./components/CharactersList"
+import CharactersList from "./components/CharactersList";
+import Navbar from "./components/Navbar";
 function App() {
-
-
   return (
-    <div className="App">
-      <CharactersList/>
-    </div>
-  )
+    <>
+      <Navbar />
+      <CharactersList />
+    </>
+  );
 }
 
-export default App
+export default App;
